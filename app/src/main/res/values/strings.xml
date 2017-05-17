@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Garritsen-pset5</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_to_do_item">ToDoItem</string>
+</resources>

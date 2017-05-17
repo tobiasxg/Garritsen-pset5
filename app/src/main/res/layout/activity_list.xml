@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tobias.garritsen_pset5.ListActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Do List"
+        android:textSize="20dp"
+        android:padding="50dp"
+        android:id="@+id/todoText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/todoText"
+        android:text="Done"
+        android:textSize="20dp"
+        android:padding="50dp"
+        android:id="@+id/doneText"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewTodo"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/todoText">
+    </ListView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doneText"
+        android:layout_above="@+id/toDo"
+        android:layout_toRightOf="@+id/todoText"
+        android:id="@+id/listViewDone"></ListView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:hint="What do you have to do?"
+        android:id="@+id/toDo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Add"
+        android:onClick="addToDo"
+        android:id="@+id/button1"/>
+
+
+</RelativeLayout>
